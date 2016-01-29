@@ -9,12 +9,8 @@ function Year(year) {
     }
   };
 
-  checkYear = function(year) {
-    if ( (year % 100 !== 0) || (year % 400 === 0) ) {
-      return true;
-    } else {
-      return false;
-    }
+  var checkYear = function(year) {
+    return (year % 100 !== 0) || (year % 400 === 0);
   };
 }
 
