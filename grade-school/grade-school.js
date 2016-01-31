@@ -1,6 +1,6 @@
 var School = function() {
   this.allStudents = {};
-  
+
   this.roster = function() {
     return this.allStudents;
   };
@@ -25,4 +25,5 @@ var School = function() {
 
 };
 
+console.log("hi");
 module.exports = School;
