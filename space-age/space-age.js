@@ -1,5 +1,7 @@
 
 var SpaceAge = function(age) {
+  'use strict';
+  
   this.seconds = age;
   this.planets = {
     "mercury": 0.2408467,
@@ -12,7 +14,8 @@ var SpaceAge = function(age) {
   };
 
   this.onEarth = function() {
-    var earth = (age / 365.25 / 24 / 60 / 60).toFixed(2);
+    var secondsInDay = 86400;
+    var earth = (age / (365.25 * secondsInDay)).toFixed(2);
     return parseFloat(earth);
   };
 
